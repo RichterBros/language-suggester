@@ -4,7 +4,7 @@ $(document).ready(function(){
       
 $("#beverage").change(function() {
       
-    var option = new Options(parseInt($("#beverage").val()), $("#movie").val()) 
+    
     
     option.selections();
 });
@@ -28,7 +28,7 @@ option.selections();
 });
 
 
-
+var option = new Options()
 
 
 
@@ -46,46 +46,16 @@ function Options(option1,option2,option3,option4){
      
 
     Options.prototype.selections= function(){
-if (this.option1 === 1){
+    this.option1 = parseInt($("#beverage").val())
+    this.option2 = parseInt($("movie").val())
+        
+    
+    if (this.option1 === 1){
     console.log("hi")
 }
 
 
     }
-
-
-//(parseInt(this.side1)
-
-//     var triangle = new Triangle($("#side1").val(),$("#side2").val(), $("#side3").val() );
-
-//     triangle.isosceles()
-//     triangle.equilateral()
-//     triangle.scalene()
-//     triangle.notATriangle()
-    
-    
-//     });
-      
-//     });
-    
-    
-    
-//     function Triangle(side1,side2,side3){
-//       this.side1 = side1;
-//       this.side2 = side2;
-//       this.side3 = side3;
-//     }
-    
-    
-    
-    
-//     Triangle.prototype.isosceles = function(){
-//       if(this.side1 === this.side2 || this.side1 === this.side3 || this.side2 === this.side3){
-//         $("#output").show();
-//         $("#output").text("Isosceles!")
-     
-//      }
-//     }
 
 
 
