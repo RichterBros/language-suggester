@@ -5,85 +5,77 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js" ></script>
-    <title></title>
+    <title>Programming Language Suggester</title>
   </head>
   <body>
-    
     <div class="container">
-      <form>
-        <div class="form-group">
-          <label for="sel1">Choose a beverage:</label>
-          <select class="form-control" id="beverage">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="1">Water</option>
-            <option value="2">Soda</option>
-            <option value="3">Juice</option>
-            <option value="4">Coffee</option>
-          </select>
-         
+      <div class="jumbotron">
+        <h1 class="display-5">Programming Language Suggester</h1>
+        <hr class="my-4">
+        <form>
+          <div class="form-group">
+            <label for="sel1">Choose a beverage:</label>
+            <select class="form-control" id="beverage">
+              <option disabled selected value> -- select an option -- </option>
+              <option value="1">Water</option>
+              <option value="2">Soda</option>
+              <option value="3">Juice</option>
+              <option value="4">Coffee</option>
+            </select>
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="sel1">Choose a movie:</label>
+            <select class="form-control" id="movie">
+              <option disabled selected value> -- select an option -- </option>
+              <option value="1">The Good, the Bad and the Ugly</option>
+              <option value="2">Terminator 2</option>
+              <option value="3">The Matrix</option>
+              <option value="4">The Goonies</option>
+            </select>
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="sel1">Choose an animal:</label>
+            <select class="form-control" id="animal">
+              <option disabled selected value> -- select an option -- </option>
+              <option value="1">dog</option>
+              <option value="2">cat</option>
+              <option value="3">giraffe</option>
+              <option value="4">elephant</option>
+            </select>
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="sel1">Choose a color:</label>
+            <select class="form-control" id="color">
+              <option disabled selected value> -- select an option -- </option>
+              <option value="1">red</option>
+              <option value="2">blue</option>
+              <option value="3">green</option>
+              <option value="4">yellow</option>
+            </select>
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="sel1">Choose music genre:</label>
+            <select class="form-control" id="music">
+              <option disabled selected value> -- select an option -- </option>
+              <option value="1">rock</option>
+              <option value="2">rap</option>
+              <option value="3">classical</option>
+              <option value="4">pop</option>
+            </select>
+          </div>
         </div>
       </form>
-
-      <form>
-        <div class="form-group">
-          <label for="sel1">Choose a movie:</label>
-          <select class="form-control" id="movie">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="1">The Good, the Bad and the Ugly</option>
-            <option value="2">Terminator 2</option>
-            <option value="3">The Matrix</option>
-            <option value="4">The Goonies</option>
-          </select>
-         
-        </div>
-      </form>
-    
-      <form>
-        <div class="form-group">
-          <label for="sel1">Choose an animal:</label>
-          <select class="form-control" id="animal">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="1">dog</option>
-            <option value="2">cat</option>
-            <option value="3">giraffe</option>
-            <option value="4">elephant</option>
-          </select>
-         
-        </div>
-      </form>
-
-      <form>
-        <div class="form-group">
-          <label for="sel1">Choose a color:</label>
-          <select class="form-control" id="color">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="1">red</option>
-            <option value="2">blue</option>
-            <option value="3">green</option>
-            <option value="4">yellow</option>
-          </select>
-         
-        </div>
-      </form>
-
-      <form>
-        <div class="form-group">
-          <label for="sel1">Choose music genre:</label>
-          <select class="form-control" id="music">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="1">rock</option>
-            <option value="2">rap</option>
-            <option value="3">classical</option>
-            <option value="4">pop</option>
-          </select>
-         
-        </div>
-      </form>
-    
-
       <button type="button" class="btn btn-primary" id = "submit">submit answers</button>
-      <p id = "results"></p>
-
+      <hr class="my-4">
+      <h5 id ="results"></h5>
     </div>
   </body>
 </html>
